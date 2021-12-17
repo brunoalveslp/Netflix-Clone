@@ -1,0 +1,125 @@
+:root {
+    --vermelho: #e50914;
+    --preto: #141414;
+    --font-color: #aaa;
+    --font-color-white: #fff;
+    --font-color-black: #000;
+}
+
+/* Base */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background: var(--preto);
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--font-color-white);
+}
+
+.container {
+    padding-left: 4rem;
+}
+
+
+header .logo {
+    width: 7rem;
+    margin-left: 5px;
+}
+
+header .nav-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: fixed;
+    float: left;
+    width: 4rem;
+    height: 100vh;
+    z-index: 100;
+    background-color: rgba(0,0,0,.2);
+}
+
+
+header .nav-container nav a {
+    text-decoration: none;
+    color: var(--font-color);
+    margin-right: 2px;
+}
+
+header .nav-container nav a i { 
+    background-color: transparent;
+    font-size: 2rem;
+    color: var(--font-color-white);
+    margin: .5rem 0;
+    padding: 1rem;
+}
+
+header nav a i:hover{
+    border-right:4px solid var(--vermelho);
+}
+
+/* Filme/serie Principa; */
+
+.main-show {
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)100%), url(../img/capa-houses.jpg);
+    background-size: cover;
+    
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.container {
+    margin-left: 1rem;
+}
+
+.main-show .container {
+    width: 70vw;
+}
+
+.main-show .title-main {
+    font-size: 3rem;
+    margin-top: 15%;
+}
+
+.main-show .description {
+    margin-top: 3rem;
+}
+
+.main-show .btn {
+    background-color: rgba(0,0,0,.2);
+    border: none;
+    border-radius: 5px;
+    color: var(--font-color-white);
+    padding: 1rem 2rem;
+    margin-top: 1rem;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.main-show .btn:nth-child(1){
+    background-color: var(--vermelho);
+}
+
+.main-show .btn:hover {
+    color: var(--font-color-black);
+    background-color: var(--font-color-white);
+    transition: .3s ease all;
+}
+
+.main-show .btn i {
+    margin-right: 5px;
+}
+
+.box-img {
+    width: 70%;
+    height: 70%;
+    display: block;
+}
