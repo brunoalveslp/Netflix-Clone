@@ -123,3 +123,39 @@ header nav a i:hover{
     height: 70%;
     display: block;
 }
+
+.carousel-container h3 {
+    font-size: 2rem;
+}
+
+@media (max-width:360px) {
+
+    .main-show {
+        font-size: 1rem;
+    }
+
+    .main-show .container {
+        width: 90vw;
+    }
+
+    .main-show .title-main {
+        margin-top: 4rem;
+        font-size: 2rem;
+    }
+
+    .main-show .description {
+        margin-top: 1rem;
+    }
+
+    .main-show .btn:nth-child(2){
+        background-color: rgb(44, 43, 43);
+    }
+
+    .main-show .btn-wrapper {
+        display: inline-block;
+    }
+    
+    .carousel-container h3 {
+        margin: 1rem 0;
+    }
+}
